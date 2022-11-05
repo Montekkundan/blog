@@ -5,6 +5,7 @@ import './App.css'
 import About from "./pages/About/about";
 import Navbar from "./components/Common/NavBar/navbar";
 import Footer from "./components/Common/Footer/footer";
+import NoPage from "./components/Common/404/404";
 
 export default function App() {
     return(
@@ -14,6 +15,7 @@ export default function App() {
                     <BrowserRouter>
                         <Routes>
                             <Route path="/" element={<Home />}/>
+                            <Route path="*" element={<NoPage />}/>
                             <Route path="/about" element={<About />}/>
                             <Route path="/blog/:id" element={<Blog />}/>
                         </Routes>
