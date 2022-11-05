@@ -4,12 +4,13 @@ import {blogList} from "../../config/data";
 import Labels from "../../components/Common/Labels/labels";
 import NoPage from "../../components/Common/404/404";
 import './blog.css'
+import {motion} from "framer-motion";
 
 export default function Blog() {
     const {id} = useParams()
     const [blog, setBlog] = useState(null);
     useEffect(() => {
-        let blog = blogList.find(blog=> blog.title.replaceAll(' ', '_').toLowerCase() === id)
+        let blog = blogList.find(blog=> blog.title.replaceAll(' ', '-').toLowerCase() === id)
         if (blog){
             setBlog(blog)
         }
@@ -44,6 +45,10 @@ export default function Blog() {
                     <div className="blog-wrapper__content">
                         {blog.content}
                     </div>
+                    <motion.button whileHover={{scale:1.1}} whileTap={{scale:0.9}} onClick={() => null}
+                    >
+                    Launch Model
+                    </motion.button>
                 </div> : <NoPage/>
             }
         </div>

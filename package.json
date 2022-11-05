@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@react-three/fiber": "^8.9.1",
+    "framer-motion": "^7.6.4",
     "r3f-perf": "^6.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
