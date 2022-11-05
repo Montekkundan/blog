@@ -5,39 +5,43 @@ export const blogList = [
     {
         id: 1,
         title: 'A Guide to Git and Github',
+        heading: 'A Guide to Git and Github.',
         category: 'development',
         subCategory: ['learn', 'github', 'git'],
         description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "Learning what git is and how github helps us enhance the capabilities of git!",
         createdAt: 'November 05, 2022',
-        cover: '/assets/images/img.png',
+        cover: '/assets/images/github.png',
         content: <Content_1/>
     },
     {
         id: 2,
         title: 'Advanced Github workflow',
+        heading: 'Advanced Github workflow.',
         category: 'development',
         subCategory: ['git', 'github', 'programming'],
         description:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         createdAt: 'November 05, 2022',
-        cover: '/assets/images/img.png',
+        cover: '/assets/images/git.png',
         content: <Content_2/>
     },
     {
         id: 3,
         title: 'What is Tea',
+        heading: 'What is Tea?',
         category: 'learning',
         subCategory: ['package-manager', 'tea'],
         description:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 
         createdAt: 'November 05, 2022',
-        cover: '/assets/images/img.png',
+        cover: '/assets/gifs/tea.gif',
     },
     {
         id: 4,
         title: 'Working with Tea',
+        heading: 'Working with Tea',
         category: 'development',
         subCategory: ['package-manager', 'tea', 'programming'],
         description:

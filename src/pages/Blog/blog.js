@@ -24,21 +24,23 @@ export default function Blog() {
 
             {
                 blog ? <div className='blog-wrapper'>
-                    <header>
-                        <p className="blog-wrapper__date">Published {blog.createdAt}</p>
-                        <h1>{blog.title}</h1>
-                        <div className='blog-wrapper__sub-category'>
-                            {blog.subCategory.map((category, index)=>
-                                (
-                                <div>
-                                    <Labels key={index} label={category}/>
-                                </div>
-                                ))
-                            }
-                        </div>
-                    </header>
-                    <img className="blog-wrapper__img" src={blog.cover} alt={blog.title} />
-                    <p className="blog-wrapper__description">{blog.description}</p>
+                    <div className="blog-wrapper__top">
+                        <header>
+                            <p className="blog-wrapper__date">Published {blog.createdAt}</p>
+                            <h1>{blog.heading}</h1>
+                            <div className='blog-wrapper__sub-category'>
+                                {blog.subCategory.map((category, index)=>
+                                    (
+                                    <div>
+                                        <Labels key={index} label={category}/>
+                                    </div>
+                                    ))
+                                }
+                            </div>
+                        </header>
+                        <img className="blog-wrapper__img" src={blog.cover} alt={blog.title} />
+                        <p className="blog-wrapper__description">{blog.description}</p>
+                    </div>
                     <div className="blog-wrapper__content">
                         {blog.content}
                     </div>
