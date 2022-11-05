@@ -25,7 +25,7 @@ export default function Blog() {
             {
                 blog ? <div className='blog-wrapper'>
                     <header>
-                        <p>Published {blog.createdAt}</p>
+                        <p className="blog-wrapper__date">Published {blog.createdAt}</p>
                         <h1>{blog.title}</h1>
                         <div className='blog-wrapper__sub-category'>
                             {blog.subCategory.map((category, index)=>
@@ -37,7 +37,7 @@ export default function Blog() {
                             }
                         </div>
                     </header>
-                    <img src={blog.cover} alt={blog.title} />
+                    <img className="blog-wrapper__img" src={blog.cover} alt={blog.title} />
                     <p className="blog-wrapper__description">{blog.description}</p>
                     <div className="blog-wrapper__content">
                         {blog.content}
