@@ -1,0 +1,8 @@
+.label__style {
+    font-size:.7rem;
+    background: linear-gradient(to right, #6190e8, #a7bfe8);
+    color: whitesmoke;
+    padding: .3rem .5rem;
+    width: fit-content;
+    border-radius: 10px;
+}

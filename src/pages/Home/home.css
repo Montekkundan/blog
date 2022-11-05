@@ -1,0 +1,11 @@
+.canvas__model {
+    width: 400px;
+    height: 400px;
+}
+.home {
+    padding-bottom: 8rem;
+}
+.home__header__section {
+    display: flex;
+    justify-content: space-between;
+}
