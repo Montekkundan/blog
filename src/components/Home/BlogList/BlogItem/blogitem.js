@@ -10,7 +10,7 @@ export default function BlogItem({blog:{title,heading, category, description, cr
             <div className="blog-item__content">
                 <img src={cover} alt={title} className="blog-item__cover"/>
                 <Labels label={category}/>
-                <h3>{heading}</h3>
+                <h3 className="blog-item__title">{heading}</h3>
                 <p className="blog-item__description">{description}</p>
                 <div className="blog-item__footer">
                     <p className="blog-item__date">{createdAt}</p>
