@@ -1,6 +1,7 @@
 import './projectItems.css'
 import {useEffect} from "react";
 import {Link} from "react-router-dom";
+import MagicText from "../../Common/MagicText/magictext";
 export default function ProjectItems() {
     useEffect(() => {
         const wrapper = document.getElementById("wrapper");
@@ -34,31 +35,36 @@ export default function ProjectItems() {
         return () => clearInterval(timer);
     });
     return (
+        <>
         <div className="wrapper">
-        <div id="wrapper" data-configuration={Math.floor(Math.random() * 3) + 1} data-roundness={Math.floor(Math.random() * 4) + 1}>
-        {/*    <div id="wrapper" data-configuration="1" data-roundness="4">*/}
-            <Link className="wrapper__link shape" to={`/project/1`}>
-                <div></div>
-            </Link>
-            <Link className="wrapper__link shape" to={`/project/2`}>
-                <div></div>
-            </Link>
-            <Link className="wrapper__link shape" to={`/project/3`}>
-                <div></div>
-            </Link>
-            <Link className="wrapper__link shape" to={`/project/4`}>
-                <div></div>
-            </Link>
-            <Link className="wrapper__link shape" to={`/project/5`}>
-                <div></div>
-            </Link>
-            <Link className="wrapper__link shape" to={`/project/6`}>
-                <div></div>
-            </Link>
-            <Link className="wrapper__link shape" to={`/project/7`}>
-                <div></div>
-            </Link>
+            <div className="wrapper__heading">
+                <MagicText word="My" magic="Projects"/>
+            </div>
+            <div id="wrapper" data-configuration={Math.floor(Math.random() * 3) + 1} data-roundness={Math.floor(Math.random() * 4) + 1}>
+            {/*    <div id="wrapper" data-configuration="1" data-roundness="4">*/}
+                <Link className="wrapper__link shape" to={`/project/1`}>
+                    <div></div>
+                </Link>
+                <Link className="wrapper__link shape" to={`/project/2`}>
+                    <div></div>
+                </Link>
+                <Link className="wrapper__link shape" to={`/project/3`}>
+                    <div></div>
+                </Link>
+                <Link className="wrapper__link shape" to={`/project/4`}>
+                    <div></div>
+                </Link>
+                <Link className="wrapper__link shape" to={`/project/5`}>
+                    <div></div>
+                </Link>
+                <Link className="wrapper__link shape" to={`/project/6`}>
+                    <div></div>
+                </Link>
+                <Link className="wrapper__link shape" to={`/project/7`}>
+                    <div></div>
+                </Link>
+            </div>
         </div>
-        </div>
+        </>
     )
 }

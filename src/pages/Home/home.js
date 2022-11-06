@@ -2,31 +2,12 @@ import Model from "../../components/Home/Model/model";
 import {Canvas} from "@react-three/fiber";
 import './home.css'
 import Header from "../../components/Home/Header/header";
-import Searchbar from "../../components/Home/SearchBar/searchbar";
-import BlogList from "../../components/Home/BlogList/bloglist";
-import {blogList} from "../../config/data";
-import {useState} from "react";
-import ProjectItems from "../../components/Home/Projects_items/projectItems";
+import ProjectItems from "../../components/Home/Projects_items_section/projectItems";
+import BlogListSection from "../../components/Home/Blog_List_section/bloglistsection";
 
 export default function Home()
 {
-    const [blogs, setBlogs] = useState(blogList);
-    const [searchKey, setSearchKey] = useState('');
 
-    // Search Submit
-    const handleSearchSubmit = event =>{
-        event.preventDefault();
-        handleSearchResults()
-    }
-
-    // Search for blogs and category
-    const handleSearchResults = () =>{
-        const filterBlogs = blogList.filter((blog) => blog.category.toLowerCase().includes
-        (searchKey.toLowerCase().trim()) || blog.title.toLowerCase().includes
-        (searchKey.toLowerCase().trim()))
-
-        setBlogs(filterBlogs)
-    }
     return (
     <>
         <div className="home">
@@ -46,9 +27,7 @@ export default function Home()
                 </Canvas>
             </div>
         </div>
-        {/*Search bar */}
-        <Searchbar value={searchKey} formSubmit={handleSearchSubmit} handleSearch={(e)=>setSearchKey(e.target.value)}/>
-        <BlogList blogs={blogs}/>
+        <BlogListSection/>
         <ProjectItems/>
         </div>
     </>
