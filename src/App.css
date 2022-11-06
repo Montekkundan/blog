@@ -7,6 +7,8 @@
     --header-footer-color: #e5dddd;
     --container-color-alt: #F0EFEF;
     --body-color: #FCFCFC;
+    --mouse-x:0;
+    --mouse-y:0;
     /* font and typography  */
     --body-font:  'JetBrains Mono', monospace;
     --h1-font-size: 1.5rem;
@@ -28,6 +30,7 @@ body.dark-theme {
     --header-footer-color: #212121;
     --container-color-alt: #181616;
     --body-color: #2B2B2B;
+    --circle-graident: rgba(255,255,255,0.6);
 }
 
 

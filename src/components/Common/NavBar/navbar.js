@@ -1,6 +1,5 @@
 import './navbar.css'
 export default function Navbar() {
-    let themeButton = document.getElementById('theme-button')
     const darkTheme = 'dark-theme'
 
 // Previously selected topic (if user selected)
@@ -16,6 +15,7 @@ export default function Navbar() {
     }
 
 // Activate / deactivate the theme manually with the button
+    let themeButton;
     themeButton = () => {
         // Add or remove the dark / icon theme
         document.body.classList.toggle(darkTheme)
