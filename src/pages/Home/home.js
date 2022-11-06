@@ -6,6 +6,7 @@ import Searchbar from "../../components/Home/SearchBar/searchbar";
 import BlogList from "../../components/Home/BlogList/bloglist";
 import {blogList} from "../../config/data";
 import {useState} from "react";
+import ProjectItems from "../../components/Home/Projects_items/projectItems";
 
 export default function Home()
 {
@@ -48,6 +49,7 @@ export default function Home()
         {/*Search bar */}
         <Searchbar value={searchKey} formSubmit={handleSearchSubmit} handleSearch={(e)=>setSearchKey(e.target.value)}/>
         <BlogList blogs={blogs}/>
+        <ProjectItems/>
         </div>
     </>
     )
