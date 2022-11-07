@@ -7,7 +7,7 @@ export default function Projects() {
         exit: {opacity:0},
     }
     return (
-        <motion.div variants={animations} initial="initial" animate="animate" exit="exit" transisition={{duration:1}}>
+        <motion.div variants={animations} initial="initial" animate="animate" transisition={{duration:1}}>
             <h1>Projects</h1>
         </motion.div>
     )

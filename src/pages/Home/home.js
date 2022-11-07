@@ -11,10 +11,9 @@ export default function Home()
     const animations = {
         initial: {opacity:0},
         animate: {opacity:1},
-        exit: {opacity:0},
     }
     return (
-        <motion.div className="home" >
+        <div className="home" >
         <div className="home__header__section">
             <Header/>
             {/*Canvas component */}
@@ -33,6 +32,6 @@ export default function Home()
         </div>
         <BlogListSection/>
         <ProjectItems/>
-        </motion.div>
+        </div>
     )
 }

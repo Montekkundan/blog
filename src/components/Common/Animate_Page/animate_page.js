@@ -5,7 +5,7 @@ import NoPage from "../404/404";
 import About from "../../../pages/About/about";
 import Blog from "../../../pages/Blog/blog";
 import Projects from "../../../pages/Projects/projects";
-export default function Animate_page({children}) {
+export default function Animate_page() {
     const location = useLocation()
     return (
         <div>

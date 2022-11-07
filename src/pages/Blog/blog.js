@@ -22,7 +22,7 @@ export default function Blog() {
         exit: {opacity:0},
     }
     return (
-        <motion.div variants={animations} initial="initial" animate="animate" exit="exit" transisition={{duration:1}}>
+        <motion.div variants={animations} initial="initial" animate="animate" transisition={{duration:1}}>
             <Link to='/' className="back__btn">
                 <span>Go Back</span>
             </Link>

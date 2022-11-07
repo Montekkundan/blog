@@ -50,4 +50,5 @@ export const blogList = [
         createdAt: 'November 05, 2022',
         cover: '/assets/gifs/tea_working.gif',
     },
+
 ];

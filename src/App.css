@@ -6,12 +6,11 @@
     --text-color-light: #a9a9a9;
     --header-footer-color: #e5dddd;
     --blog-item: rgba(0, 0, 0, 0.1);
-    --blog-item-container: rgb(210, 207, 207);
-    --blog-circle:rgba(0,0,0,0.1);
+    --blog-item-container: #F2F2F2;
+    --blog-circle: rgba(92, 184, 228, 0.3);
     --blog-border: rgba(0,0,0,0.3);
     --container-color-alt: #F0EFEF;
     --body-color: #FCFCFC;
-    --circle-graident: rgba(0,0,0,0.6);
     --mouse-x:0;
     --mouse-y:0;
     /* font and typography  */
@@ -35,26 +34,11 @@ body.dark-theme {
     --header-footer-color: #212121;
     --container-color-alt: #181616;
     --body-color: #2B2B2B;
-    --circle-graident: rgba(255,255,255,0.6);
     --blog-item: rgba(255, 255, 255, 0.1);
     --blog-item-container: rgb(23,23,23);
     --blog-circle:rgba(255,255,255,0.1);
     --blog-border: rgba(255,255,255,0.3);
 }
-body.light-theme {
-    --title-color: #0B0A0A;
-    --text-color: #403A3A;
-    --text-color-light: #a9a9a9;
-    --header-footer-color: #e5dddd;
-    --blog-item: rgba(0, 0, 0, 0.1);
-    --blog-item-container: rgb(210, 207, 207);
-    --blog-circle:rgba(0,0,0,0.1);
-    --blog-border: rgba(0,0,0,0.3);
-    --container-color-alt: #F0EFEF;
-    --circle-graident: rgba(0,0,0,0.6);
-    --body-color: #FCFCFC;
-}
-
 
 
 *,*::before,*::after {
