@@ -1,4 +1,6 @@
 import './navbar.css'
+import {AiOutlineBulb} from "react-icons/ai";
+import {useEffect, useState} from "react";
 export default function Navbar() {
     const darkTheme = 'dark-theme'
 
@@ -22,11 +24,35 @@ export default function Navbar() {
         // We save the theme and the current icon that the user chose
         localStorage.setItem('selected-theme', getCurrentTheme())
     }
+    const handleOnClick = (e) => {
+        console.log(localStorage.getItem('selected-theme'))
+        const checked = e.target.checked;
+        if (checked) {
+            document.body.classList.remove("dark-theme")
+            document.body.classList.add("light-theme")
+        } else {
+            document.body.classList.remove("light-theme")
+            document.body.classList.add("dark-theme")
+        }
+        localStorage.setItem('selected-theme', getCurrentTheme())
+    }
+    const check = (theme) => {
+        return localStorage.getItem('selected-theme') !== 'dark';
+    }
+
     return <nav className="navbar">
         <h1><a href="/" className="navbar__title">Blog</a></h1>
         <ul>
             <li>
                 {/*change theme button */}
+                {/*<label className="toggle__label">*/}
+                {/*    <input type="checkbox" checked={check() } onClick={(e) => {*/}
+                {/*        handleOnClick(e);*/}
+                {/*    }}/>*/}
+                {/*    <span>*/}
+                {/*        <AiOutlineBulb className="toggle__img"/>*/}
+                {/*    </span>*/}
+                {/*</label>*/}
                 <button onClick={themeButton} title="Theme" id="theme-button" >Dark/Light</button>
             </li>
             <li>

@@ -4,13 +4,17 @@ import './home.css'
 import Header from "../../components/Home/Header/header";
 import ProjectItems from "../../components/Home/Projects_items_section/projectItems";
 import BlogListSection from "../../components/Home/Blog_List_section/bloglistsection";
+import {motion} from "framer-motion";
 
 export default function Home()
 {
-
+    const animations = {
+        initial: {opacity:0},
+        animate: {opacity:1},
+        exit: {opacity:0},
+    }
     return (
-    <>
-        <div className="home">
+        <motion.div className="home" >
         <div className="home__header__section">
             <Header/>
             {/*Canvas component */}
@@ -29,7 +33,6 @@ export default function Home()
         </div>
         <BlogListSection/>
         <ProjectItems/>
-        </div>
-    </>
+        </motion.div>
     )
 }

@@ -1,13 +1,23 @@
-import {motion} from 'framer-motion'
+import {AnimatePresence} from 'framer-motion'
+import {Route, Routes, useLocation} from "react-router-dom";
+import Home from "../../../pages/Home/home";
+import NoPage from "../404/404";
+import About from "../../../pages/About/about";
+import Blog from "../../../pages/Blog/blog";
+import Projects from "../../../pages/Projects/projects";
 export default function Animate_page({children}) {
-    const animations = {
-        initial: {opacity:0, x:100},
-        animate: {opacity:1, x:0},
-        exit: {opacity:0, x:-100},
-    }
+    const location = useLocation()
     return (
-        <motion.div variants={animations} inital="animate" animate="animate" exit="exit" transition={{duration:1}}>
-            {children}
-        </motion.div>
+        <div>
+            <AnimatePresence>
+            <Routes location={location} key={location.pathname}>
+                <Route path="/" element={<Home />}/>
+                <Route path="*" element={<NoPage />}/>
+                <Route path="/about" element={<About />}/>
+                <Route path="/blog/:id" element={<Blog />}/>
+                <Route path="/project/:id" element={<Projects />}/>
+            </Routes>
+            </AnimatePresence>
+        </div>
     )
 }
