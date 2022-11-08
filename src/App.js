@@ -5,13 +5,17 @@ import Footer from "./components/Common/Footer/footer";
 import Animate_page from "./components/Common/Animate_Page/animate_page";
 
 export default function App() {
-    const cursor = document.querySelector('.cursor');
+    const cursor = document.getElementsByClassName('.cursor');
     const onCursorMove = e => {
-
+        // cursor.setAttribute("style", "top:" + (e.pageY -10)+ "px; left:" + (e.pageX-10) + "px;")
+        cursor.style.setProperty("--mouse-x",`${e.pageY -10}px`);
+        cursor.style.setProperty("--mouse-y",`${e.pageX -10}px`);
+        // cursor.style.setProperty("top",`${e.pageY -10}px`);
+        // cursor.style.setProperty("left",`${e.pageX -10}px`);
     }
     return(
         <>
-            {/*<div className="cursor" onMouseMoveCapture={onCursorMove}></div>*/}
+            {/*<div className="cursor" onMouseMove={onCursorMove}></div>*/}
             <Navbar/>
                 <div className="container">
                     <BrowserRouter>

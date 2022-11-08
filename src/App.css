@@ -51,6 +51,8 @@ body.dark-theme {
     border-radius: 50%;
     border: 1px solid var(--title-color);
     position: absolute;
+    top: 0;
+    left: 0;
 }
 body {
     font-family: var(--body-font);
