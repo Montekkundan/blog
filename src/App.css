@@ -45,11 +45,18 @@ body.dark-theme {
     margin: 0;
     box-sizing: border-box;
 }
-
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--title-color);
+    position: absolute;
+}
 body {
     font-family: var(--body-font);
     background-color: var(--body-color);
     overflow-x: hidden;
+    /*cursor: none;*/
 }
 
 button, input {

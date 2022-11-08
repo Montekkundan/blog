@@ -12,9 +12,9 @@ export default function Footer() {
                     </div>
                     <div className="footer__column">
                         <h3>Contact</h3>
-                        <a href="/">Discord</a>
-                        <a href="/">Github</a>
-                        <a href="/">LinkedIn</a>
+                        <a href="https://discord.com/users/702170848508903444" target="_blank">Discord</a>
+                        <a href="https://github.com/Montekkundan" target="_blank">Github</a>
+                        <a href="https://www.linkedin.com/in/montekkundan" target="_blank">LinkedIn</a>
                     </div>
                 </div>
             </div>

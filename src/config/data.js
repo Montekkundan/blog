@@ -11,7 +11,7 @@ export const blogList = [
         description:
             "Learning what git is and how github helps us enhance the capabilities of git!",
         createdAt: 'November 05, 2022',
-        cover: '/assets/images/github.png',
+        cover: '/assets/images/github.webp',
         content: <Content_1/>
     },
     {
@@ -23,7 +23,7 @@ export const blogList = [
         description:
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         createdAt: 'November 05, 2022',
-        cover: '/assets/images/git.png',
+        cover: '/assets/images/git.webp',
         content: <Content_2/>
     },
     {
@@ -36,7 +36,7 @@ export const blogList = [
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 
         createdAt: 'November 05, 2022',
-        cover: '/assets/gifs/tea.gif',
+        cover: '/assets/gifs/tea.avif',
     },
     {
         id: 4,
@@ -48,7 +48,7 @@ export const blogList = [
             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
 
         createdAt: 'November 05, 2022',
-        cover: '/assets/gifs/tea_working.gif',
+        cover: '/assets/gifs/tea_working.avif',
     },
 
 ];
