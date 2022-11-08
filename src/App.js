@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from "./components/Common/NavBar/navbar";
 import Footer from "./components/Common/Footer/footer";
 import Animate_page from "./components/Common/Animate_Page/animate_page";
+import {AnalyticsWrapper} from "./components/Common/Vercel/analytics";
 
 export default function App() {
     const cursor = document.getElementsByClassName('.cursor');
