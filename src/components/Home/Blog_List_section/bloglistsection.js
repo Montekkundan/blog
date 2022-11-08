@@ -4,6 +4,7 @@ import {useState} from "react";
 import {blogList} from "../../../config/data";
 import './bloglistsection.css'
 import MagicText from "../../Common/MagicText/magictext";
+import {Link} from "react-router-dom";
 
 export default function BlogListSection() {
     const [blogs, setBlogs] = useState(blogList);
@@ -30,6 +31,10 @@ export default function BlogListSection() {
             </div>
         <Searchbar value={searchKey} formSubmit={handleSearchSubmit} handleSearch={(e)=>setSearchKey(e.target.value)}/>
          <BlogList blogs={blogs}/>
+
+            <Link to='/blog' className="show__btn">
+                <span>Show all</span>
+            </Link>
         </>
     )
 }

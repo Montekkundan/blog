@@ -7,17 +7,14 @@ body{
 
 .navbar {
     display: flex;
-    background-color: var(--header-footer-color);
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
     padding: 2rem 1.5rem;
 }
-
-.navbar__title {
+.navbar .navbar__title {
     color: var(--text-color);
-    font-weight: 800;
-    font-size: 2rem;
+    font-size: 30px;
 }
 
 .navbar ul {

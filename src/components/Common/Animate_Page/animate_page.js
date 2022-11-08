@@ -5,6 +5,7 @@ import NoPage from "../404/404";
 import About from "../../../pages/About/about";
 import Blog from "../../../pages/Blog/blog";
 import Projects from "../../../pages/Projects/projects";
+import AllBlogs from "../../../pages/All Blogs/allblogs";
 export default function Animate_page() {
     const location = useLocation()
     return (
@@ -14,6 +15,7 @@ export default function Animate_page() {
                 <Route path="/" element={<Home />}/>
                 <Route path="*" element={<NoPage />}/>
                 <Route path="/about" element={<About />}/>
+                <Route path="/blog" element={<AllBlogs/>}/>
                 <Route path="/blog/:id" element={<Blog />}/>
                 <Route path="/project/:id" element={<Projects />}/>
             </Routes>

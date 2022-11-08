@@ -2,3 +2,13 @@
     padding-bottom: 5rem;
     text-align:center;
 }
+
+.show__btn {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #a9a9a9;
+    margin-bottom: 2rem;
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+}

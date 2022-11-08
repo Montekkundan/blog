@@ -35,7 +35,7 @@ export default function Navbar() {
     }
 
     return <nav className="navbar">
-        <h1><a href="/" className="navbar__title">Blog</a></h1>
+        <h1><a href="/" className="navbar__title">DevLog</a></h1>
         <ul>
             <li>
                 <a href="/about">About</a>

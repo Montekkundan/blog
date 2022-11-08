@@ -1,6 +1,5 @@
 .footer {
     padding: 80px 60px;
-    background: var(--header-footer-color);
     width: 100%;
     justify-content: space-between;
 }
