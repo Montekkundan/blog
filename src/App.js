@@ -23,6 +23,7 @@ export default function App() {
                     </BrowserRouter>
                 </div>
             <Footer/>
+            <AnalyticsWrapper />
         </>
     )
 }
