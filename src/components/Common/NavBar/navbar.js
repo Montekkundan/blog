@@ -34,7 +34,6 @@ export default function Navbar() {
         localStorage.setItem('selected-theme', getCurrentTheme())
     }
 
-
     return <nav className="navbar">
         <h1><a href="/" className="navbar__title">Blog</a></h1>
         <ul>
@@ -45,7 +44,7 @@ export default function Navbar() {
                 <a href="/">More</a>
             </li>
             <li>
-                <button onClick={themeButton} title="Theme" className="toggle__theme"> {icon ?<MdDarkMode/> : <BsSun style={{color: "white"}} />}</button>
+                <button onClick={themeButton} title="Theme" className="toggle__theme"> {icon ?<MdDarkMode className="dark__icon"/> : <BsSun className="light__icon" />}</button>
             </li>
         </ul>
     </nav>

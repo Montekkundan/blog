@@ -1,4 +1,5 @@
 import {motion} from "framer-motion";
+import AngryCheckbox from "../../components/Home/Angry_Checkbox/angrycheckbox";
 
 export default function Projects() {
     const animations = {
@@ -8,7 +9,7 @@ export default function Projects() {
     }
     return (
         <motion.div variants={animations} initial="initial" animate="animate" transisition={{duration:1}}>
-            <h1>Projects</h1>
+            <AngryCheckbox/>
         </motion.div>
     )
 }

@@ -49,6 +49,7 @@ body.dark-theme {
 body {
     font-family: var(--body-font);
     background-color: var(--body-color);
+    overflow-x: hidden;
 }
 
 button, input {

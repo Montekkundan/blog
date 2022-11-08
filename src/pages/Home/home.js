@@ -4,7 +4,6 @@ import './home.css'
 import Header from "../../components/Home/Header/header";
 import ProjectItems from "../../components/Home/Projects_items_section/projectItems";
 import BlogListSection from "../../components/Home/Blog_List_section/bloglistsection";
-import {motion} from "framer-motion";
 
 export default function Home()
 {

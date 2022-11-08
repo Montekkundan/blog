@@ -5,6 +5,7 @@ import Labels from "../../components/Common/Labels/labels";
 import NoPage from "../../components/Common/404/404";
 import './blog.css'
 import {motion} from "framer-motion";
+import Button from "../../components/Common/Animated_Modals/Button/button";
 
 export default function Blog() {
     const {id} = useParams()
@@ -49,10 +50,7 @@ export default function Blog() {
                     <div className="blog-wrapper__content">
                         {blog.content}
                     </div>
-                    <motion.button whileHover={{scale:1.1}} whileTap={{scale:0.9}} onClick={() => null}
-                    >
-                    Launch Model
-                    </motion.button>
+                    {/*<Button children={"Launch Modal"}/>*/}
                 </div> : <NoPage/>
             }
         </motion.div>
