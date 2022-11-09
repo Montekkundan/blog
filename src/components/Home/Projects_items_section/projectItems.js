@@ -38,7 +38,7 @@ export default function ProjectItems() {
         <>
         <div className="wrapper">
             <div className="wrapper__heading">
-                <MagicText word="My" magic="Projects"/>
+                <MagicText word="My" magic="Latest Projects"/>
             </div>
             <div id="wrapper" data-configuration={Math.floor(Math.random() * 3) + 1} data-roundness={Math.floor(Math.random() * 4) + 1}>
             {/*    <div id="wrapper" data-configuration="1" data-roundness="4">*/}

@@ -27,7 +27,7 @@ export default function BlogListSection() {
     return (
         <>
             <div className="blog__heading">
-            <MagicText word="My" magic="Blogs"/>
+            <MagicText word="My" magic="Latest Blogs"/>
             </div>
         <Searchbar value={searchKey} formSubmit={handleSearchSubmit} handleSearch={(e)=>setSearchKey(e.target.value)}/>
          <BlogList blogs={blogs}/>
