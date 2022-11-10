@@ -18,19 +18,5 @@ export default function BlogItem({blog:{title,heading, category, description, cr
             </div>
         </div>
     </Link>
-        // <div className="blog-item">
-        //     <div className="blog-item__content">
-        //     <img src={cover} alt={title} className="blog-item__cover"/>
-        //     <Labels label={category}/>
-        //     <h3>{heading}</h3>
-        //     <p className="blog-item__description">{description}</p>
-        //     <footer>
-        //         <p className="blog-item__date">{createdAt}</p>
-        //         <Link className="blog-item__link" to={`/blog/${underscore_url}`}>
-        //             ->
-        //         </Link>
-        //     </footer>
-        //     </div>
-        // </div>
     )
 }

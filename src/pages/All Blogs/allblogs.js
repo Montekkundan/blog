@@ -36,7 +36,7 @@ export default function AllBlogs() {
     return (
         <>
             <div className="blog__heading">
-                <MagicText word="My" magic="Blogs"/>
+                <MagicText word="My" magic="Logs"/>
             </div>
             <Searchbar value={searchKey} formSubmit={handleSearchSubmit} handleSearch={(e)=>setSearchKey(e.target.value)}/>
             <div id="blog-list" onMouseMoveCapture={onMouseMoveCaptureHandler}>
