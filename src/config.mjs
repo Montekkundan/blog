@@ -8,8 +8,8 @@ export const SITE = {
 	title: 'Devlog | Montek',
 	description: 'Devlog is a digital garden of Montek where logs and projects are kept.',
 
-	// googleAnalyticsId: false, // or "G-XXXXXXXXXX",
-	// googleSiteVerificationId: '',
+	googleAnalyticsId: "G-X1E0CLG4BB", // false or "G-XXXXXXXXXX",
+	googleSiteVerificationId: 'W4ApX09AU9mm67lquEC1XXlhOiRJlJlZPeqhG5SIbZA',
 };
 
 export const BLOG = {
