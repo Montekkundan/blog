@@ -59,7 +59,7 @@ You can install Git on your desired operating system from <a href="https://git-s
 
 Now if you type `git version` you should see your git version which is installed.
 
-<img src="../../src/assets/images/log_content/git_version.png" alt="git version" width="500" height="600" style="margin: 40px auto;"></img>
+<img src="/log_content/git_version.png" alt="git version" width="500" height="600" style="margin: 40px auto;"></img>
 
 BTW I am using mac system and the termianl which I am using is <a href="https://app.warp.dev/referral/2KG4N3" target="_blank">Warp</a>.
 
@@ -67,7 +67,7 @@ BTW I am using mac system and the termianl which I am using is <a href="https://
 
 Now try typing `git` in your terminal you will see this:
 
-<img src="../../src/assets/images/log_content/git_help.png" alt="git version" width="800" height="900" style="margin: 40px auto;"></img>
+<img src="/log_content/git_help.png" alt="git version" width="800" height="900" style="margin: 40px auto;"></img>
 
 This shows all the commands you can use with Git. Great isn't it?! Similarly you can type `git --help` to get the similar results as above.
 
@@ -108,13 +108,13 @@ Now lets implement the most used and basic Git command. For this follow these si
 
 All done for the initial setup!
 
-<img src="../../src/assets/images/log_content/git_tut.png" alt="git version" width="700" height="600" style="margin: 40px auto;"></img>
+<img src="/log_content/git_tut.png" alt="git version" width="700" height="600" style="margin: 40px auto;"></img>
 
 As you can see normally we cannot view the `.git` folder. But when we list all the files including the hidden files we see our `.git` folder.
 
 Now if you have followed along, lets start. Create a text file in that folder and type anything as the content.
 
-<img src="../../src/assets/images/log_content/git_add.png" alt="git version" width="700" height="600" style="margin: 40px auto;"></img>
+<img src="/log_content/git_add.png" alt="git version" width="700" height="600" style="margin: 40px auto;"></img>
 
 I have made a file named `hello.txt` and added the content as `hello this is something!`
 
@@ -131,7 +131,7 @@ We will now commit the change with the command `git commit -m "inital commit"` h
 
 Now if you try looking at our status with `git status` you will see that our working tree is clean! Thats good as nothing is changed in our file. Now lets change few words in our file which we created and committed just now.
 
-<img src="../../src/assets/images/log_content/git_commit.png" alt="git version" width="700" height="600" style="margin: 40px auto;"></img>
+<img src="/log_content/git_commit.png" alt="git version" width="700" height="600" style="margin: 40px auto;"></img>
 
 As you can see I added `else` at the end of the statement. Now lets see our status by using the command `git status`. We can see that we get our file is modified.
 
