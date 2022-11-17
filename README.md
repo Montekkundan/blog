@@ -17,6 +17,7 @@
 ├── src/
 │   ├── assets/
 │   │   ├── images/
+        |   ├── log/
 |   |   └── styles/
 |   |       └── base.css
 │   ├── components/
