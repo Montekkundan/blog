@@ -1,0 +1,14 @@
+---
+import { getPermalink } from '~/utils/permalinks';
+
+const { category, class: className = 'text-sm' } = Astro.props;
+---
+
+{
+	category && (
+		
+				<p class="bg-gray-100 dark:bg-slate-700 inline-block mr-2 mb-2 py-0.5 px-2">
+					<a href={getPermalink(category, 'category')}>{category}</a>
+				</p>
+	)
+}
